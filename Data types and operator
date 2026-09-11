@@ -1,0 +1,22 @@
+let name = "Krushna";
+let age = 21;
+let isStudent = true;
+
+console.log(name);
+console.log(age);
+console.log(isStudent);
+
+
+
+arithmetic:
+
+
+let a = 20;
+let b = 6;
+
+console.log(a + b); // Addition
+console.log(a - b); // Subtraction
+console.log(a * b); // Multiplication
+console.log(a / b); // Division
+console.log(a % b); // Remainder
+console.log(a ** b); // Power
