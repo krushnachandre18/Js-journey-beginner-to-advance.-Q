@@ -1,0 +1,19 @@
+let age = 18;
+
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+} else {
+    console.log("You are not eligible to vote.");
+}
+
+
+//if else
+
+
+let number = 10;
+
+if (number > 5) {
+    console.log("Number is greater than 5");
+} else {
+    console.log("Number is 5 or less");
+}
