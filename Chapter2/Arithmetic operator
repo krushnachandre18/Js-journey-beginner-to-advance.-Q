@@ -1,0 +1,274 @@
+// ===============================
+// 1. ARITHMETIC OPERATORS
+// ===============================
+
+let a = 20;
+let b = 6;
+
+console.log("Addition:", a + b);
+console.log("Subtraction:", a - b);
+console.log("Multiplication:", a * b);
+console.log("Division:", a / b);
+console.log("Modulus:", a % b);
+console.log("Power:", a ** b);
+
+
+// ===============================
+// 2. INCREMENT / DECREMENT
+// ===============================
+
+let x = 10;
+
+console.log("x:", x);
+
+x++;
+console.log("After Increment:", x);
+
+x--;
+console.log("After Decrement:", x);
+
+
+// ===============================
+// 3. ASSIGNMENT OPERATORS
+// ===============================
+
+let n = 10;
+
+n += 5;
+console.log("n += 5:", n);
+
+n -= 3;
+console.log("n -= 3:", n);
+
+n *= 2;
+console.log("n *= 2:", n);
+
+n /= 4;
+console.log("n /= 4:", n);
+
+n %= 3;
+console.log("n %= 3:", n);
+
+
+// ===============================
+// 4. COMPARISON OPERATORS
+// ===============================
+
+let p = 10;
+let q = 20;
+
+console.log(p == q);    // Equal
+console.log(p != q);    // Not equal
+console.log(p === q);   // Strict equal
+console.log(p !== q);   // Strict not equal
+console.log(p > q);     // Greater
+console.log(p < q);     // Less
+console.log(p >= q);    // Greater or equal
+console.log(p <= q);    // Less or equal
+
+
+// ===============================
+// 5. LOGICAL OPERATORS
+// ===============================
+
+let age = 20;
+let hasID = true;
+
+console.log(age >= 18 && hasID); // AND
+console.log(age >= 18 || hasID); // OR
+console.log(!hasID);             // NOT
+
+
+// ===============================
+// 6. STRING OPERATIONS
+// ===============================
+
+let firstName = "Krushna";
+let lastName = "Chandre";
+
+console.log(firstName + " " + lastName);
+
+console.log(`My name is ${firstName} ${lastName}`);
+
+
+// ===============================
+// 7. TERNARY OPERATOR
+// ===============================
+
+let marks = 75;
+
+let result = marks >= 40 ? "Pass" : "Fail";
+
+console.log(result);
+
+
+// ===============================
+// 8. TYPE OPERATIONS
+// ===============================
+
+let value = 100;
+
+console.log(typeof value);
+
+let name = "Krushna";
+
+console.log(typeof name);
+
+
+// ===============================
+// 9. NULLISH COALESCING
+// ===============================
+
+let username = null;
+
+let displayName = username ?? "Guest";
+
+console.log(displayName);
+
+
+// ===============================
+// 10. OPTIONAL CHAINING
+// ===============================
+
+let student = {
+    name: "Krushna",
+    address: {
+        city: "Nashik"
+    }
+};
+
+console.log(student.address?.city);
+console.log(student.contact?.phone);
+
+
+// ===============================
+// 11. BITWISE OPERATORS
+// ===============================
+
+let c = 5;
+let d = 3;
+
+console.log("Bitwise AND:", c & d);
+console.log("Bitwise OR:", c | d);
+console.log("Bitwise XOR:", c ^ d);
+console.log("Bitwise NOT:", ~c);
+console.log("Left Shift:", c << 1);
+console.log("Right Shift:", c >> 1);
+
+
+// ===============================
+// 12. IF / ELSE OPERATION
+// ===============================
+
+let marks2 = 85;
+
+if (marks2 >= 90) {
+    console.log("Grade A+");
+}
+else if (marks2 >= 75) {
+    console.log("Grade A");
+}
+else if (marks2 >= 60) {
+    console.log("Grade B");
+}
+else if (marks2 >= 40) {
+    console.log("Pass");
+}
+else {
+    console.log("Fail");
+}
+
+
+// ===============================
+// 13. SWITCH OPERATION
+// ===============================
+
+let day = 2;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+
+    case 2:
+        console.log("Tuesday");
+        break;
+
+    case 3:
+        console.log("Wednesday");
+        break;
+
+    default:
+        console.log("Invalid day");
+}
+
+
+// ===============================
+// 14. ARRAY OPERATIONS
+// ===============================
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+console.log(fruits);
+
+fruits.push("Orange");
+console.log(fruits);
+
+fruits.pop();
+console.log(fruits);
+
+fruits.unshift("Grapes");
+console.log(fruits);
+
+fruits.shift();
+console.log(fruits);
+
+console.log(fruits.length);
+
+
+// ===============================
+// 15. LOOP OPERATIONS
+// ===============================
+
+// for loop
+for (let i = 1; i <= 5; i++) {
+    console.log("For:", i);
+}
+
+
+// while loop
+let i = 1;
+
+while (i <= 5) {
+    console.log("While:", i);
+    i++;
+}
+
+
+// do while
+let j = 1;
+
+do {
+    console.log("Do While:", j);
+    j++;
+} while (j <= 5);
+
+
+// ===============================
+// 16. FUNCTIONS
+// ===============================
+
+function add(num1, num2) {
+    return num1 + num2;
+}
+
+console.log("Addition:", add(10, 20));
+
+
+// Arrow function
+
+const multiply = (num1, num2) => {
+    return num1 * num2;
+};
+
+console.log("Multiplication:", multiply(5, 4));
