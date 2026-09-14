@@ -1,0 +1,10 @@
+let student = {
+    name: "Krushna",
+    age: 20,
+    course: "TY BCS",
+    college: "KJ Somaiya"
+};
+
+for (let key in student) {
+    console.log(key + ":", student[key]);
+}
