@@ -1,0 +1,5 @@
+let students = ["Krushna", "Rahul", "Amit", "Rohit", "Akash"];
+
+for (let student of students) {
+    console.log("Student Name:", student);
+}
