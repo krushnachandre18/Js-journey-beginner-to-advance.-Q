@@ -1,0 +1,150 @@
+// JavaScript Array - Complete Example
+
+let marks = [78, 92, 65, 88, 95, 72, 81, 56, 90, 69];
+
+console.log("Original Array:");
+console.log(marks);
+
+
+// 1. Find length
+console.log("\nTotal Students:", marks.length);
+
+
+// 2. Print all marks
+console.log("\nAll Marks:");
+
+for (let i = 0; i < marks.length; i++) {
+    console.log("Student", i + 1, "=", marks[i]);
+}
+
+
+// 3. Calculate total
+let total = 0;
+
+for (let i = 0; i < marks.length; i++) {
+    total = total + marks[i];
+}
+
+console.log("\nTotal Marks:", total);
+
+
+// 4. Calculate average
+let average = total / marks.length;
+
+console.log("Average:", average);
+
+
+// 5. Find highest mark
+let highest = marks[0];
+
+for (let i = 1; i < marks.length; i++) {
+    if (marks[i] > highest) {
+        highest = marks[i];
+    }
+}
+
+console.log("Highest Mark:", highest);
+
+
+// 6. Find lowest mark
+let lowest = marks[0];
+
+for (let i = 1; i < marks.length; i++) {
+    if (marks[i] < lowest) {
+        lowest = marks[i];
+    }
+}
+
+console.log("Lowest Mark:", lowest);
+
+
+// 7. Count passed students
+let passCount = 0;
+
+for (let i = 0; i < marks.length; i++) {
+    if (marks[i] >= 40) {
+        passCount++;
+    }
+}
+
+console.log("Passed Students:", passCount);
+
+
+// 8. Count failed students
+let failCount = 0;
+
+for (let i = 0; i < marks.length; i++) {
+    if (marks[i] < 40) {
+        failCount++;
+    }
+}
+
+console.log("Failed Students:", failCount);
+
+
+// 9. Search a mark
+let search = 88;
+let found = false;
+
+for (let i = 0; i < marks.length; i++) {
+    if (marks[i] === search) {
+        found = true;
+        console.log("\n", search, "found at index", i);
+        break;
+    }
+}
+
+if (!found) {
+    console.log("\n", search, "not found");
+}
+
+
+// 10. Add a new mark
+marks.push(85);
+
+console.log("\nAfter adding 85:");
+console.log(marks);
+
+
+// 11. Remove last mark
+marks.pop();
+
+console.log("\nAfter removing last element:");
+console.log(marks);
+
+
+// 12. Sort in ascending order
+let ascending = [...marks];
+
+ascending.sort((a, b) => a - b);
+
+console.log("\nAscending Order:");
+console.log(ascending);
+
+
+// 13. Sort in descending order
+let descending = [...marks];
+
+descending.sort((a, b) => b - a);
+
+console.log("\nDescending Order:");
+console.log(descending);
+
+
+// 14. Reverse array
+let reversed = [...marks];
+
+reversed.reverse();
+
+console.log("\nReversed Array:");
+console.log(reversed);
+
+
+// 15. Display students with marks above average
+console.log("\nStudents Above Average:");
+
+for (let i = 0; i < marks.length; i++) {
+    if (marks[i] > average) {
+        console.log("Student", i + 1, "=", marks[i]);
+    }
+}
