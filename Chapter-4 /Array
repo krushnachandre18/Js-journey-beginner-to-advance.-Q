@@ -1,0 +1,6 @@
+let fruits = ["Apple", "Banana"];
+
+fruits.push("Mango");      // Add at end
+fruits.unshift("Orange");  // Add at beginning
+
+console.log(fruits);
