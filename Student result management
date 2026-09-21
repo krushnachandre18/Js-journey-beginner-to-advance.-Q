@@ -1,0 +1,39 @@
+// Student Result Management
+
+function calculateResult(marks) {
+    let total = 0;
+
+    for (let i = 0; i < marks.length; i++) {
+        total = total + marks[i];
+    }
+
+    let percentage = total / marks.length;
+
+    let grade;
+
+    if (percentage >= 90) {
+        grade = "A+";
+    } else if (percentage >= 80) {
+        grade = "A";
+    } else if (percentage >= 70) {
+        grade = "B";
+    } else if (percentage >= 60) {
+        grade = "C";
+    } else if (percentage >= 40) {
+        grade = "D";
+    } else {
+        grade = "Fail";
+    }
+
+    console.log("Total Marks:", total);
+    console.log("Percentage:", percentage + "%");
+    console.log("Grade:", grade);
+}
+
+let studentName = "Krushna";
+
+let marks = [85, 92, 78, 88, 95];
+
+console.log("Student Name:", studentName);
+
+calculateResult(marks);
